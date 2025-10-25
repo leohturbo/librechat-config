@@ -15,6 +15,7 @@ endpoints:
       titleModel: "gpt-5-chat-latest"
       modelDisplayLabel: "GPT-5"
       iconURL: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/openai.png"
+      capabilities: ["web_search"]
 
 webSearch:
   serperApiKey: "${SERPER_API_KEY}"
