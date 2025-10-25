@@ -35,3 +35,4 @@ webSearch:
   jinaApiKey: "${JINA_API_KEY}"
   rerankerType: "jina"
   scraperTimeout: 7500
+  safeSearch: 2
