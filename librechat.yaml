@@ -17,7 +17,7 @@ endpoints:
       iconURL: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/openai.png"
 
     - name: "Claude"
-      apiKey: "${OPENROUTER_API_KEY}"
+      apiKey: "${CLAUDE_OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
