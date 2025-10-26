@@ -2,6 +2,9 @@ version: 1.1.5
 
 cache: true
 
+interface:
+  runCode: false
+
 endpoints:
   custom:
     - name: "GPT-5"
@@ -12,7 +15,7 @@ endpoints:
           - "gpt-5-chat-latest"
         fetch: false
       titleConvo: true
-      titleModel: "gpt-5-chat-latest"
+      titleModel: "GPT-5"
       modelDisplayLabel: "GPT-5"
       iconURL: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/openai.png"
 
@@ -24,9 +27,195 @@ endpoints:
           - "anthropic/claude-sonnet-4.5"
         fetch: false
       titleConvo: true
-      titleModel: "anthropic/claude-sonnet-4.5"
+      titleModel: "Claude Sonnet 4.5"
       modelDisplayLabel: "Claude Sonnet 4.5"
       iconURL: "https://logo.svgcdn.com/logos/claude-icon.png"
+
+
+    - name: "xAI"
+      apiKey: "${CLAUDE_OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default:
+          - "x-ai/grok-4-fast"
+        fetch: false
+      titleConvo: true
+      titleModel: "Grok 4 Fast"
+      modelDisplayLabel: "Grok 4 Fast"
+      iconURL: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/xai.png"
+
+    - name: "Meta"
+      apiKey: "${CLAUDE_OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default:
+          - "meta-llama/llama-4-maverick"
+        fetch: false
+      titleConvo: true
+      titleModel: "Llama 4 Maverick"
+      modelDisplayLabel: "Llama 4 Maverick"
+      iconURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Meta_Platforms_Inc._logo_%28cropped%29.svg/2560px-Meta_Platforms_Inc._logo_%28cropped%29.svg.png"
+
+    - name: "NanoBanana"
+      apiKey: "${CLAUDE_OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default:
+          - "google/gemini-2.5-flash-image"
+        fetch: false
+      titleConvo: true
+      titleModel: "Nano Banana"
+      modelDisplayLabel: "Nano Banana"
+      iconURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+
+    - name: "Google"
+      apiKey: "${CLAUDE_OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default:
+          - "google/gemini-2.5-pro"
+        fetch: false
+      titleConvo: true
+      titleModel: "Gemini 2.5 Pro"
+      modelDisplayLabel: "Gemini 2.5 Pro"
+      iconURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+
+  agents:
+    disableBuilder: false
+    recursionLimit: 35
+    capabilities: ["file_search", "actions", "tools", "artifacts", "context", "ocr", "chain", "web_search"]
+    maxCitations: 50
+    maxCitationsPerFile: 10
+
+fileConfig:
+  endpoints:
+    custom:
+      fileSizeLimit: 95
+      totalSizeLimit: 2000
+      supportedMimeTypes:
+        # Documentos
+        - "application/pdf"
+        - "application/msword"
+        - "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        - "application/vnd.oasis.opendocument.text"
+        - "application/rtf"
+        - "text/plain"
+        - "text/markdown"
+        # Planilhas
+        - "application/vnd.ms-excel"
+        - "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        - "application/vnd.oasis.opendocument.spreadsheet"
+        - "text/csv"
+        # Apresentações
+        - "application/vnd.ms-powerpoint"
+        - "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        - "application/vnd.oasis.opendocument.presentation"
+        # Código
+        - "text/html"
+        - "text/css"
+        - "text/javascript"
+        - "application/javascript"
+        - "application/json"
+        - "application/xml"
+        - "text/xml"
+        - "application/x-php"
+        - "application/x-httpd-php"
+        - "text/x-python"
+        - "text/x-java"
+        - "text/x-c"
+        - "text/x-c++src"
+        - "text/x-csharp"
+        - "text/x-go"
+        - "text/x-rust"
+        - "text/x-ruby"
+        - "text/x-typescript"
+        - "application/x-sh"
+        - "application/x-yaml"
+        # Imagens
+        - "image/jpeg"
+        - "image/png"
+        - "image/gif"
+        - "image/webp"
+        - "image/svg+xml"
+        - "image/bmp"
+        - "image/tiff"
+        # Áudio
+        - "audio/mpeg"
+        - "audio/mp3"
+        - "audio/wav"
+        - "audio/wave"
+        - "audio/x-wav"
+        - "audio/ogg"
+        - "audio/webm"
+        - "audio/flac"
+        - "audio/aac"
+        - "audio/m4a"
+        - "audio/x-m4a"
+        - "audio/mp4"
+    agents:
+      fileSizeLimit: 95
+      totalSizeLimit: 2000
+      supportedMimeTypes:
+        # Documentos
+        - "application/pdf"
+        - "application/msword"
+        - "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        - "application/vnd.oasis.opendocument.text"
+        - "application/rtf"
+        - "text/plain"
+        - "text/markdown"
+        # Planilhas
+        - "application/vnd.ms-excel"
+        - "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        - "application/vnd.oasis.opendocument.spreadsheet"
+        - "text/csv"
+        # Apresentações
+        - "application/vnd.ms-powerpoint"
+        - "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        - "application/vnd.oasis.opendocument.presentation"
+        # Código
+        - "text/html"
+        - "text/css"
+        - "text/javascript"
+        - "application/javascript"
+        - "application/json"
+        - "application/xml"
+        - "text/xml"
+        - "application/x-php"
+        - "application/x-httpd-php"
+        - "text/x-python"
+        - "text/x-java"
+        - "text/x-c"
+        - "text/x-c++src"
+        - "text/x-csharp"
+        - "text/x-go"
+        - "text/x-rust"
+        - "text/x-ruby"
+        - "text/x-typescript"
+        - "application/x-sh"
+        - "application/x-yaml"
+        # Imagens
+        - "image/jpeg"
+        - "image/png"
+        - "image/gif"
+        - "image/webp"
+        - "image/svg+xml"
+        - "image/bmp"
+        - "image/tiff"
+        # Áudio
+        - "audio/mpeg"
+        - "audio/mp3"
+        - "audio/wav"
+        - "audio/wave"
+        - "audio/x-wav"
+        - "audio/ogg"
+        - "audio/webm"
+        - "audio/flac"
+        - "audio/aac"
+        - "audio/m4a"
+        - "audio/x-m4a"
+        - "audio/mp4"
+  serverFileSizeLimit: 2000
 
 webSearch:
   serperApiKey: "${SERPER_API_KEY}"
