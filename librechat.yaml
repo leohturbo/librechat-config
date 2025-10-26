@@ -4,6 +4,7 @@ cache: true
 
 interface:
   runCode: false
+  fileSearch: false
 
 endpoints:
   custom:
@@ -123,7 +124,6 @@ fileConfig:
         - "text/x-python"
         - "text/x-java"
         - "text/x-c"
-        - "text/x-c++src"
         - "text/x-csharp"
         - "text/x-go"
         - "text/x-rust"
@@ -186,7 +186,6 @@ fileConfig:
         - "text/x-python"
         - "text/x-java"
         - "text/x-c"
-        - "text/x-c++src"
         - "text/x-csharp"
         - "text/x-go"
         - "text/x-rust"
