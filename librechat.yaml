@@ -69,7 +69,7 @@ endpoints:
       modelDisplayLabel: "Nano Banana"
       iconURL: "https://www.nanobanana-studio.ai/logo1.svg"
 
-    - name: "Google"
+    - name: "Gemini-2-5"
       apiKey: "${CLAUDE_OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
