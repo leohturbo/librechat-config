@@ -57,17 +57,17 @@ endpoints:
       modelDisplayLabel: "Llama 4 Maverick"
       iconURL: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/meta-color.png"
 
-    - name: "NanoBanana"
-      apiKey: "${CLAUDE_OPENROUTER_KEY}"
-      baseURL: "https://openrouter.ai/api/v1"
-      models:
-        default:
-          - "google/gemini-2.5-flash-image"
-        fetch: false
-      titleConvo: true
-      titleModel: "Google: Nano Banana"
-      modelDisplayLabel: "Nano Banana"
-      iconURL: "https://www.nanobanana-studio.ai/logo1.svg"
+    # - name: "NanoBanana"
+    #   apiKey: "${CLAUDE_OPENROUTER_KEY}"
+    #   baseURL: "https://openrouter.ai/api/v1"
+    #   models:
+    #     default:
+    #       - "google/gemini-2.5-flash-image"
+    #     fetch: false
+    #   titleConvo: true
+    #   titleModel: "Google: Nano Banana"
+    #   modelDisplayLabel: "Nano Banana"
+    #   iconURL: "https://www.nanobanana-studio.ai/logo1.svg"
 
     - name: "Gemini-2-5"
       apiKey: "${CLAUDE_OPENROUTER_KEY}"
