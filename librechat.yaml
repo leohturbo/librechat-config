@@ -22,49 +22,49 @@ endpoints:
 
     - name: "Claude"
       apiKey: "${CLAUDE_OPENROUTER_KEY}"
-      baseURL: "https://openrouter.ai/api/v1"
+      baseURL: "https://api.laozhang.ai/v1"
       models:
         default:
-          - "anthropic/claude-sonnet-4.5"
+          - "claude-sonnet-4-5-20250929"
         fetch: false
       titleConvo: true
-      titleModel: "anthropic/claude-sonnet-4.5"
+      titleModel: "claude-sonnet-4-5-20250929"
       modelDisplayLabel: "Claude Sonnet 4.5"
       iconURL: "https://logo.svgcdn.com/logos/claude-icon.png"
 
     - name: "xAI"
       apiKey: "${CLAUDE_OPENROUTER_KEY}"
-      baseURL: "https://openrouter.ai/api/v1"
+      baseURL: "https://api.laozhang.ai/v1"
       models:
         default:
-          - "x-ai/grok-4-fast"
+          - "grok-4-fast"
         fetch: false
       titleConvo: true
-      titleModel: "x-ai/grok-4-fast"
+      titleModel: "grok-4-fast"
       modelDisplayLabel: "Grok 4 Fast"
       iconURL: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/xai.png"
 
     - name: "Meta"
       apiKey: "${CLAUDE_OPENROUTER_KEY}"
-      baseURL: "https://openrouter.ai/api/v1"
+      baseURL: "https://api.laozhang.ai/v1"
       models:
         default:
-          - "meta-llama/llama-4-maverick"
+          - "llama-4-maverick"
         fetch: false
       titleConvo: true
-      titleModel: "meta-llama/llama-4-maverick"
+      titleModel: "llama-4-maverick"
       modelDisplayLabel: "Llama 4 Maverick"
       iconURL: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/meta-color.png"
 
     - name: "Gemini-2-5"
       apiKey: "${CLAUDE_OPENROUTER_KEY}"
-      baseURL: "https://openrouter.ai/api/v1"
+      baseURL: "https://api.laozhang.ai/v1"
       models:
         default:
-          - "google/gemini-2.5-pro"
+          - "gemini-2.5-pro"
         fetch: false
       titleConvo: true
-      titleModel: "google/gemini-2.5-pro"
+      titleModel: "gemini-2.5-pro"
       modelDisplayLabel: "Gemini 2.5 Pro"
       iconURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
 
