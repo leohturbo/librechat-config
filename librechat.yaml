@@ -8,16 +8,18 @@ interface:
 
 endpoints:
   custom:
-    - name: "GPT-5"
+    - name: "GPT"
       apiKey: "${OPENAI_API_KEY}"
       baseURL: "https://api.openai.com/v1"
       models:
         default:
+          - "gpt-4.1"
+          - "gpt-4o"
           - "gpt-5-chat-latest"
         fetch: false
       titleConvo: true
-      titleModel: "gpt-5-chat-latest"
-      modelDisplayLabel: "GPT-5"
+      titleModel: "gpt-4.1"
+      modelDisplayLabel: "GPT"
       iconURL: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/openai.png"
 
     - name: "Claude"
